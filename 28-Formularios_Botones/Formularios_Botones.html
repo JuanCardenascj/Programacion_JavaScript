@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios_Botones</title>
+</head>
+
+<body> <!--Todo lo que estan dentro es de JavaScript-->
+    <h4>Botón de incrementar</h4><br> <!--Titulo de la pagina y br para salto de pagina-->
+    <form> <!--Crea formulario-->
+        <input type="button" value="Incrementar" onclick="incrementar()">
+        <!--Input type (crea boton) value (le define nombre)-->
+    </form>
+    <script>
+        let contador = 0; //Crea la variable contador y le define valor 0
+        function incrementar() { //Crea y define la funcion incrementar para el boton incrementar
+            contador++; //Contador va aumentado el valor de 1 en 1
+            alert('Valor: ' + contador); //Alerta para concatenar el String con el contador
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios_Texto</title>
+</head>
+
+<body> <!--Todo lo que va dentro del body se refleja en la web-->
+    <h4>Acceso de usuarios</h4> <!--Creamos el titulo de la pagina-->
+    <form> <!--Creamps el formulario-->
+        Ingrese usuario: <br> <!--Definimos los campos de texto y salto de linea-->
+        <input type="text" id="usuario"> <!--Pedimos los datos al usuario-->
+        <br><br> <!--Salto de linea doble-->
+        Ingrese clave: <br> <!--Definimos los campos de texto y salto de linea-->
+        <input type="password" id="clave"><!--Pedimos los datos al usuario-->
+        <br><br> <!--Salto de linea doble-->
+        <input type="button" value="Confirmar" onclick="verificar()"><!--Creamos el boton-->
+    </form>
+
+    <script> //Programamos en JavaScript la funcionalidad del boton
+        let control = 0; //Creamos una variable y la inicializamos 
+        let contraseña = 'acceso01'; //Creamos una variable y la inicializamos con el texto 
+        function verificar() { //Creamos una funcion de lo que va hacer nuestro boton
+            let clave = document.getElementById('clave').value; //Crea variable dentro de la funcion - se capta el dato que se esta ingresando por su id(clave), debe obtener un elemento por su id el valor que tiene
+            if (clave != contraseña || clave == '') { //Si clave es diferente de contraseña O si esta vacia
+                alert('CLAVE INCORRECTA O VACIA, INTENTE DE NUEVO....'); //Imprime
+                control++; //Cada vez que la clave no este vacia, nuestra variable va valer un valor mas.!
+                if (control >= 3) { //Si control es mayor o igual a 3
+                    alert('INTENTOS AGOTADOS, ACCESO BLOQUEADO \
+                                CONTACTAR A SOPORTE TECNICO'); //Imprime
+                }
+            } else { //Pero si clave es igual a clave entonces
+                window.open('http://www.google.com'); //Abre una nueva ventana con google
+            }
+        }
+    </script>
+</body>
+
+</html>

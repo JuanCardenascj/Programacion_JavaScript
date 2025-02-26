@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones_String</title>
+</head>
+
+<body>
+    <script>
+        let palabra = 'Java Script';
+        document.write('La palabra es: ' + palabra);
+        document.write('<br>'); //Salto de linea
+
+        //Ver la cantidad de letras que contiene un texto
+        document.write('Cantidad de letras: ', palabra.length); //Length ( Dice cuantas letras contiene)
+        document.write('<br>'); //Salto de linea
+
+        //Ver caracteres especifica de letras o caracteres
+        document.write('Primeras 4 letras: ', palabra.slice(0, 4)); //Slide (Busca los primeros 4 caracteres, desde el 0 hasta el 4)
+        document.write('<br>'); //Salto de linea
+
+        //Ver caracteres especifica de letras o caracteres
+        document.write('Primeras 4 letras: ', palabra.substring(0, 4)); //substring (Busca los primeros 4 caracteres, desde el 0 hasta el 4)
+        document.write('<br>'); //Salto de linea
+
+
+        //Cambiar valores en un texto
+        let saludo = 'Hola a todos'; //Declara la variable llamada saludo
+        saludo = saludo.replace('Hola', 'Adios'); //Con esta variable reemplaza el valor de saludo por adios
+        document.write(saludo);
+        document.write('<br>');
+
+        //Poner en mayusculas
+        documen.write('En mayusculas: ', palabra.toUpperCase()); //ToUpperCase poner en mayusculas
+        document.write('<br>'); //Salto de linea
+
+        //Poner en minusculas
+        document.write('En minusculas: ', palabra.toLowerCase()); //toLowerCase para poner en minusculas
+        document.write('<br>'); //Salto de linea
+
+        //Unir texto
+        let palabra2 = 'Curso de ';
+        document.write('Unir palabras: ', palabra2.concat(palabra)); //Concat Para unir palabras 
+        document.write(palabra2);
+        document.write('<br>');
+
+        //Acortar espacios entre textos
+        let palabra3 = '    Hola     '; //Declara variable, la define y le da un valor
+        document.write(palabra3); //Imprime en la web
+        document.write(palabra.trimStar()); //TrimStar para acortar los espacios 
+        document.write('<br>'); //Para salto de linea
+
+        //Cortar cantidad de caracteres de una palabra
+        document.write(palabra.split('Script')); //Split(script) Corte de mi palabra solo java
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenar</title>
+</head>
+
+<body> <!--Unir datos de varios tipos y varias formas-->
+    <script>
+        let nombre = 'Juan_David_' //Declara la variable local y le asigna un valor
+        let apellido = 'Cárdenas_Jiménez' //Declara la variable local y le asgina un valor
+
+        //Concatenacion con valores enteros
+        let precio = 500.000; //Declara la variable local y le asigna un valor
+
+
+        document.write(nombre + ' ' + apellido); //Para concatenar
+        document.write('<br>'); //Para el salto de linea
+        document.write('Nombre: ' + nombre + ' ' + apellido); //Para concatenar y dar el signicado de lo que es.
+        document.write('<br>'); //Para el salto de linea
+        document.write('El precio es: ' + precio); //Imprime en el navegador
+
+        //Otra forma de concatenar valores en JS - No es muy util a menos que lo exijan
+        document.write('<br>'); //Para el salto de linea
+        let saludo = nombre.concat(apellido); //Inicializa, nombre.concant - apellido | Unido al valor de la variable apellido
+        document.write(saludo); //Imprime en el navegador
+        document.write('<br>'); //Para el salto de linea
+
+        //Otra forma de concatenar valores en JS
+        document.write('==============================='); //Otra forma para el salto de linea
+        document.write('<br>'); //Para el salto de linea
+        document.write(nombre, apellido); //Imprime en el navegador
+
+
+    </script> <!---->
+
+</body>
+
+</html>

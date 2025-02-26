@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignacion</title>
+</head>
+
+<body> <!--Todo lo que este dentro de script es lo que se va JS-->
+    <script>
+        let a, b, sum, res, mul, div, resid, poten; //Operador de asignacion
+        //Pedimos datos al usuario
+        a = parseInt(prompt('INGRESE VALOR 1....')); //Convierte a entero el valor digitado por el usuario
+        b = parseInt(prompt('INGRESE VALOR 2....')); //Convierte a entero el valor digitado por el usuario
+
+        //ParseInt convierte entero para que los signos no funcionen como concatenadores sino como operadores
+        //Sumamos
+        sum = a + b;
+
+        //Resta
+        res = a - b;
+
+        //Multiplicacion
+        mul = a * b;
+
+        //Division
+        div = a / b;
+
+        //Residuo o modulo
+        res = a % b;
+
+        //Potenciacion
+        poten = a ** b;
+
+        //Mostamos en la pagina web
+        document.write('La suma es:  ' + sum); //Muestra resultado de la suma
+        document.write('<br>'); //Salto de linea
+        document.write('La resta es:  ' + res); //Muestra resultado de la resta
+        document.write('<br>'); //Salto de linea
+        document.write('La multiplicacion es:  ' + mul); //Muestra resultado de la multiplicacion
+        document.write('<br>'); //Salto de linea
+        document.write('La division es:  ' + div); //Muestra resultado de la division
+        document.write('<br>'); //Salto de linea
+        document.write('La residuo es:  ' + resid); //Muestra resultado del residuo
+        document.write('<br>'); //Salto de linea
+        document.write('La potencia es:  ' + poten); //Muestra resultado de la potencia
+        document.write('<br>'); //Salto de linea
+
+
+    </script>
+
+</body>
+
+</html>

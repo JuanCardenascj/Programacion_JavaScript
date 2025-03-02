@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheebox</title>
+</head>
+
+<body>
+    <h4>Que lenguajes conoces?</h4>
+    <form> <!--Crea las opciones-->
+        <input type="checkbox" id="chechk1">Java<br>
+        <input type="checkbox" id="chechk2">JavaScript<br>
+        <input type="checkbox" id="chechk3">Python<br>
+        <input type="checkbox" id="chechk4">C<br>
+        <input type="checkbox" id="chechk5">C#<br>
+        <input type="checkbox" id="chechk6">C++<br>
+        <input type="button" value="Confirmar" onclick="seleccion()">
+    </form>
+    <script> //Le da funcionalidad a los cheeck box
+        function seleccion() {
+            let cantidad = 0; //Crea la variable
+            if (document.getElementById('chechk1').checked) {
+                cantidad++;
+            }
+            if (document.getElementById('chechk2').checked) {
+                cantidad++;
+            }
+            if (document.getElementById('chechk3').checked) {
+                cantidad++;
+            }
+            if (document.getElementById('chechk4').checked) {
+                cantidad++;
+            }
+            if (document.getElementById('chechk5').checked) {
+                cantidad++;
+            }
+
+            alert('Conoces: ' + cantidad + 'lenguajes');
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+</head>
+
+<body>
+    <input type="number" id="tiempoelegido"><!--Etiqueta crea botones-->
+    <button onclick="comenzarTiempo()">Alarma</button><!--Enlasamos onclick a nuestro boton alarma-->
+    <h1 id="textoalarma" style="color: red;">APAGADO!</h1>
+
+    <audio controls id="audioAlarma"><!--Etiqueta de audio-->
+        <source src="43-Sonidos/alarma.mp3" type="audio/mpeg">
+        <!--Etiqueta de fuente, para verificar o buscar donde esta el elemento-->
+        Sonido no habilitado
+
+    </audio>
+
+
+    <script src="Temporizador.js"></script> <!--Enlace con el archivo js-->
+
+</body>
+
+</html>

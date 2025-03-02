@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Son elementos de entrada, de seleccion unica-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio-Buttons</title>
+</head>
+
+<body>
+    <h4>Seleccione disponibilidad de horario</h4> <!--Etiqueta h4 para titulos-->
+    <form><!--Etiqueta para formularios-->
+        <input type="radio" id="radio1" name="horario">Mañana<br> <!--Se le da ID para identificar-->
+        <input type="radio" id="radio2" name="horario">Tarde<br> <!--Se le da ID para identificar-->
+        <input type="radio" id="radio3" name="horario">Noche<br> <!--Se le da ID para identificar-->
+        <br><br>
+        <input type="button" name="Confirmar" onclick="seleccion()">
+    </form>
+    <script>//Creamos la funcionalidad de los botones o el boton
+        function seleccion() { //Cre la funcion
+            if (document.getElementById('radio1').checked) { //Condicional
+                alert('Horario de 8 am a 12 medio dia'); //Alert imprime mensaje flotante
+            }
+            if (document.getElementById('radio2').checked) { //Condicional
+                alert('Horario de 2 pm a 6 pm'); //Alert imprime mensaje flotante
+            }
+            if (document.getElementById('radio3').checked) { //Condicional
+                alert('Horario de 7 pm8 am a 11 pm'); //Alert imprime mensaje flotante
+            }
+        }
+    </script>
+
+</body>
+
+</html>

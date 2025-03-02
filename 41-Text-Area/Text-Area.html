@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Area</title>
+</head>
+
+<body> <!--Etiqueta cuerpo de la pagina web-->
+    <!--P pára parrafo y textarea para el texto en el cuadro-->
+    <p><textarea id="texto" rows="10" cols="35" maxlength="140" onfocus="vaciar(this)"></textarea></p>
+    <p>carácteres disponibles:
+        <span id="cantidad">20</span> <!--Etiqueta de estilos-->
+    </p>
+
+    <script> //Definimos funciones
+        document.getElementById('texto').addEventListener('keyup', caracteres); //Se utiliza para abjuntar un escuchador
+
+        function caracteres() {
+            let cant = document.getElementById('texto').value.length;
+            let disponibles = 20 - parseInt(cant);
+            document.getElementById('cantidad').innerHTML = disponibles; //Es una propiedad que permite acceder al contenido
+            if (disponibles == 0) {
+                alert('CANTIDAD DE CARACTERES AGOTADOS');
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

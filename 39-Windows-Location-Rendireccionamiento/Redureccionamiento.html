@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redireccionamiento</title>
+</head>
+
+<body>
+    Ir a Wikipedia.com
+    <input type="button" onclick="redireccionar()" value="Ir"><!--Etiqueta boton, value: nombre del boton-->
+
+    <script>//Creamos funcionalidad
+        function redireccionar() {
+            if (window.confirm('¿Desea salir de la pagina?')) { //Creamos la condicional IF
+                window.location = 'https://wikipedia.com'; //Abre la pagaina en una nueva ventana
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

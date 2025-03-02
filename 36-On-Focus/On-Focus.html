@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Una funcion que nos permite realizar acciones en nuestras casillas de texto 
+al seleccionarlas con el mouse-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Focurs</title>
+</head>
+
+<body>
+    <h4>Ingrese sus datos</h4><!--Etiqueta titulo-->
+    <form><!--Etiqueta formulario-->
+        Nombre<br><!--Salto de linea-->
+        <input type="text" id="nombre" onfocus="vaciar(this)" value="nombre"><!--Etiqueta para crear el boton-->
+        <br><br><!--Salto de linea-->
+        Edad<br><!--Salto de linea-->
+        <input type="text" id="edad" onfocus="vaciar(this)" value="edad"><!--Etiquta para crear boton-->
+        <br><br><!--Salto de linea-->
+        <input type="button" id="Ingresar" onclick="verificar()"><!--Etiqueta para crear botones-->
+    </form>
+    <script>
+        function vaciar() {
+            control.value = '';
+        }
+        function verificar() {
+            alert('Datos confirmados');
+        }
+    </script>
+
+
+</body>
+
+</html>
